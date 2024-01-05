@@ -7,6 +7,7 @@ module.exports = {
     output: {
         path: `${__dirname}/dist`,
         filename: 'bundle.js',
+        publicPath: '/dist/', // Set the correct publicPath
     },
     module: {
         rules: [
@@ -32,7 +33,7 @@ module.exports = {
     ],
     devServer: {
         port: 8000,
-        static: './public',
+        static: ['./dist', './public'],
         open: true,
     },
 };
