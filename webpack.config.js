@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/index.js', // or your entry file
+  entry: './src/index.js',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
@@ -9,15 +9,14 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
+        test: /\.scss$/,
+        use: [
+          'style-loader',   // Inject styles into DOM
+          'css-loader',     // Interpret CSS
+          'sass-loader',    // Process Sass/SCSS
+        ],
       },
     ],
   },
-  devServer: {
-    static: path.join(__dirname, 'dist'), // Replaces contentBase
-    compress: true,
-    port: 9000,
-    open: true,
-  },
 };
+
