@@ -33,7 +33,9 @@ module.exports = {
     ],
     devServer: {
         port: 8000,
-        static: ['./dist', './public'],
+        // static: ['./dist', './public'],
+        static: './public',
         open: true,
+        watchFiles: ['src/**/*'], // Adjust the glob pattern to match your project structure
     },
 };
