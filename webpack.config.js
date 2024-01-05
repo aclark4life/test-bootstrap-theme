@@ -30,4 +30,9 @@ module.exports = {
             filename: 'style.css',
         }),
     ],
+    devServer: {
+        port: 8000,
+        static: './public',
+        open: true,
+    },
 };
