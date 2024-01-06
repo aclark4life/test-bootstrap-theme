@@ -8,3 +8,6 @@ serve:
 
 build:
 	$(MAKE) npm-build
+
+lint:
+	$(MAKE) djlint --reformat public/index.html
