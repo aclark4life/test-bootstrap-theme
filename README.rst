@@ -9,3 +9,5 @@ In which `Bootstrap 5.3's color modes <https://getbootstrap.com/docs/5.3/customi
     make serve
 
 .. image:: screenshot.png
+
+.. image:: screenshot2.png
