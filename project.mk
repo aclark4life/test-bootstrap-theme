@@ -10,4 +10,4 @@ build:
 	$(MAKE) npm-build
 
 lint:
-	$(MAKE) djlint --reformat public/index.html
+	djlint --reformat public/index.html
